@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.ColorButton {
+  background-color: rgb(7, 119, 41);
+  color: darkslategrey;
+  font-weight: 600;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.left-panel {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.cameraSet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+
+  color: black;
+  font-weight: 600;
+  position: absolute;
+  background-color: rgba(5, 174, 180, 0.26); /* istediğiniz arka plan rengi */
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.cameraSet:hover {
+  background-color: rgba(5, 180, 5, 0.26); /* istediğiniz arka plan rengi */
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.cameraSet input {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.cameraSet input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid rgb(7, 119, 41);
+}
+
+.cameraSet button {
+  background-color: rgb(7, 119, 41);
+  color: white;
+  font-weight: 600;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+}
+
+canvas {
+  border-radius: 8px;
+  width: 936px !important;
+  height: 685px !important;
+  border: 1px solid #ccc;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 20px;
+}
+
+.info-panel {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modifications {
+  list-style: none;
+  padding: 0;
+}
+
+.modifications li {
+  margin-bottom: 8px;
+}
+
+.bottom-panel {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-panel {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}

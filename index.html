@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Araba Modifiyesi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Araba Modifiyesi</h1>
+    </div>
+
+    <div class="container">
+        <div class="left-panel">
+            <canvas id="carCanvas"></canvas>
+            <div class="cameraSet">Camera Settings
+                <input type="range" min="0.1" max="10" value="5" step="0.1" class="slider" id="cameraSlider">
+                <button type="reset" id="resetButton">reset camera</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="info-panel">
+                <h2>Değişebilen Parçalar</h2>
+                <ul class="modifications Colors">
+                    <h3>Body Colors</h3>
+                    <li>
+                        <button type="button" class="ColorButton" id="bodyWhite">White</button>
+                        <button type="button" class="ColorButton" id="bodyGray">Gray</button>
+                        <button type="button" class="ColorButton" id="bodyDarkGray">Darkgray</button>
+                        <button type="button" class="ColorButton" id="bodyOrange">Orange</button>
+                        <button type="button" class="ColorButton" id="bodyDarkOrange">DarkOrange</button>
+                        <button type="button" class="ColorButton" id="bodyGreen">Green</button>
+                        <button type="button" class="ColorButton" id="bodyDarkGreen">DarkGreen</button>
+                        <button type="button" class="ColorButton" id="bodyRed">Red</button>
+                        <button type="button" class="ColorButton" id="bodyDarkRed">DarkRed</button>
+                        <button type="button" class="ColorButton" id="bodyPink">Pink</button>
+                        <button type="button" class="ColorButton" id="bodyDarkPink">DarkPink</button>
+                    </li>
+                    <h3>Whell Colors</h3>
+                    <li>
+                        <button type="button" class="ColorButton" id="whellWhite">White</button>
+                        <button type="button" class="ColorButton" id="whellGray">Gray</button>
+                        <button type="button" class="ColorButton" id="whellDarkGray">DarkGray</button>
+                        <button type="button" class="ColorButton" id="whellOrange">Orange</button>
+                        <button type="button" class="ColorButton" id="whellDarkOrange">DarkOrange</button>
+                        <button type="button" class="ColorButton" id="whellGreen">Green</button>
+                        <button type="button" class="ColorButton" id="whellDarkGreen">DarkGreen</button>
+                        <button type="button" class="ColorButton" id="whellRed">Red</button>
+                        <button type="button" class="ColorButton" id="whellDarkRed">DarkRed</button>
+                        <button type="button" class="ColorButton" id="whellPink">Pink</button>
+                        <button type="button" class="ColorButton" id="whellDarkPink">DarkPink</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-panel">
+        <h2>Araba Hakkında Bilgiler</h2>
+        <p>Mitsubishi'nin performans odaklı spor otomobili Evo X, güçlü turboşarjlı 2.0 litrelik motoru ve dört tekerlekten çekişi ile dikkat çeker. Agresif tasarımı, keskin hatları ve dinamik yapısıyla spor tutkunlarının ilgisini çeker. Gelişmiş süspansiyon sistemi ve teknolojik özellikleriyle yüksek performanslı sürüş deneyimi sunar. Evo X, otomobil tutkunlarının hız tutkusunu ve sürüş keyfini bir arada yaşayabilecekleri etkileyici bir araçtır.</p>
+        <p>Widebody modifiye edilmiş Evo X, genişletilmiş çamurlukları, agresif görünümü ve özelleştirilmiş gövde kitleriyle dikkat çeker. Önemli ölçüde genişletilmiş tekerlek izi, özel tasarım jantlar ve geniş lastikler, otomobilin yola daha güçlü bir şekilde yapışmasını sağlar. Bu modifiye, Evo X'in sportif karakterini ve sokakta dikkat çekici bir görünüm sunmasını sağlar, performansıyla birleşen görsel etkiyle tam anlamıyla bir otomobil tutkunlarının ilgisini çeker.</p>
+        <p>Varis, Mitsubishi Evo X için popüler bir modifiye markasıdır. Varis tarafından sunulan gövde kitleri, splitterler, difüzörler ve spoilerler gibi aerodinamik parçalar, otomobilin görünümünü ve performansını iyileştirmek için kullanılır. Bu modifiye parçaları, Evo X'in agresif ve sportif tasarımını daha da vurgular, aynı zamanda aerodinamik stabiliteyi artırarak yol tutuşunu geliştirir. Varis modifiyesi, otomobil tutkunları arasında geniş kabul görmüş bir seçenek olup, Evo X'in performans potansiyelini ve görsel çekiciliğini artırır.</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
